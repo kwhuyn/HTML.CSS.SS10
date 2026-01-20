@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+.flex-container {
+    background-color: lightcoral;
+    height: 100vh;
+    display: flex; /* thuộc tính bắt buộc để định nghĩa flexbox */
+}
+.menu {
+    background-color: deepskyblue;
+    width: 250px;
+}
+.main-layout {
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.header {
+    background-color: lightsalmon;
+    height: 50px;
+}
+.main-content {
+    background-color:lightseagreen;
+    flex:1;
+}

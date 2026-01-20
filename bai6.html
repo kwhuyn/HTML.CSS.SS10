@@ -1,0 +1,168 @@
+ <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Food</title>
+
+        </head>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #faf7f2;
+    color: #222;
+}
+
+.header {
+    background: #1f1f1f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+}
+
+.header h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.header .menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.header .menu a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.main > h2 {
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.main_card {
+    background: white;
+    max-width: 520px;
+    margin: 0 auto 60px;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.main_card img.food {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.main_card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.main_card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.main_card .button {
+    color: #c58b2b;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main > h2:nth-of-type(2) {
+    margin-bottom: 25px;
+}
+
+.main_card2 {
+    background: white;
+    text-align: left;
+    padding: 18px 22px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.main_card2 h2 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.main_card2 p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.footer {
+    background: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    font-size: 13px;
+    margin-top: 60px;
+}
+        </style>
+        <body>
+            <header class="header">
+                <h3>Grourmet Insights</h3>
+
+                <div class="menu">
+                    <a href="link1">Home</a>
+                    <a href="link2">About</a>
+                    <a href="link3">Posts</a>
+                    <a href="link4">Contact</a>
+                </div>
+            </header>
+
+            
+            <main class="main">
+                <h2>Bài Viết Nổi Bật</h2>
+                <div class="main_card">
+                    <img class="food" src="./Món chính.png" alt="Món Khai Vị">
+                    <h3>Nghệ Thuật Plating Trong Fine Dining</h3>
+                    <p>Khám phá các đầu bếp hàng đầu biến món ăn thành tác phẩm nghệ thuật, từ kỹ thuật cơ bản đến sáng tạo đỉnh cao</p>
+                    <p class="button"></p>
+                </div>
+
+                <h2>Các Bài Viêt Khác</h2>
+
+                <div class="main_card2">
+                    <h2>Bí Quyết Chọn Nguyên Liệu Cao Cấp</h2>
+                    <p>Từ Wagyu Nhật Bản đến hải sản tươi sống, học cách chọn nguyên liệu để tạo nên món ăn hoàn hảo.</p>
+                </div>
+
+                <div class="main_card2">
+                    <h2>Xu Hướng Ẩm Thực 2025 </h2>
+                    <p>Những phong cách plating mới và nguyên liệu đang lên ngôi trong thế giới Fine Dining.</p>
+                </div>
+
+                <div class="main_card2">
+                    <h2>Hành Trình Của Một Đầu Bếp Michelin</h2>
+                    <p>Chia sẻ từ một đầu bếp từng đạt sao Michelin và đam mê và thử thách trong bếp.</p>
+                </div>
+                </main>
+
+                <footer class="footer">
+                    <p>&copy; 2025 Gourmet Insights. All rights reserved.</p>

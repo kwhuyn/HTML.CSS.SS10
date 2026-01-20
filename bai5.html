@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Món Nổi Bật</title>
+  
+</head>
+<style>*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+
+.title{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.food{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.large_card{
+    border-radius: 15px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.large_card img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.small_card{
+    border-radius: 15px;
+    overflow: hidden;
+}
+.small_card img{
+    width: 190px;
+    height: 140px;
+    object-fit: cover;
+}
+
+h3{
+    margin: 10px 0 5px 0;
+    font-size: 22px;
+    text-align: center;
+}
+
+.price{
+    text-align: center;
+    font-size: 18px;
+    color: #d3a065;
+}</style>
+<body>
+
+<h2 class="title">Món Nổi Bật Hôm Nay</h2>
+
+<section class="food">
+    <div class="large_card">
+    <img class="food-image" src="./Món khai vị.png" alt="Món Khai Vị">
+    <h3>Grilled Wagyu Beef Tenderloin</h3>
+    <p class="price">1.200.000 ₫</p>
+    </div>
+    
+    <div class="small_card">
+    <img class="food-image" src="./Món khai vị.png" alt="Món Khai Vị">
+    <h3>Seared Scallops</h3>
+    <p class="price">320.000 ₫</p>
+    </div>
+    
+    <div class="small_card">
+    <img class="food-image" src="./Món khai vị.png" alt="Món Khai Vị">
+    <h3>Truffle Deviled Eggs</h3>
+    <p class="price">180.000 ₫</p>
+    </div>
+
+    <div class="large_card">
+    <img class="food-image" src="./Món khai vị.png" alt="Món Khai Vị">
+    <h3>Lobster Bisque</h3>
+    <p class="price">420.000 ₫</p>
+    </div>
+
+    <div class="large_card">
+    <img class="food-image" src="./Món khai vị.png" alt="Món Khai Vị">
+    <h3>Pan-Seared Foie Gras</h3>
+        <p class="price">580.000 ₫</p>
+    </div>
+
+</section>
+</body>
+</html>

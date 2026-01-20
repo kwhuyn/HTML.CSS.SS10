@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Belle Époque</title>
+
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #f7f4ee;
+    color: #222;
+}
+
+.hero {
+    height: 70vh;
+    background: url("./GrilledMeat.png") center / cover no-repeat;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-overlay h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    font-size: 16px;
+    max-width: 600px;
+}
+
+.main {
+    padding: 60px 40px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main_card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.main_card:hover {
+    transform: translateY(-6px);
+}
+
+.main_card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.main_card h3 {
+    font-size: 16px;
+    margin: 14px 10px 6px;
+    font-weight: 600;
+}
+
+.main_card p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 14px;
+}
+.card-grid .main_card:nth-child(5) {
+    grid-column: 2 / 3;
+}
+.card-grid .main_card:nth-child(6) {
+    grid-column: 3 / 4;
+}
+.card-grid .main_card:nth-child(7) {
+    grid-column: 4 / 5;
+}
+
+.reservation {
+    background: #8b0000;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.reservation h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.reservation p {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.reservation-form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.reservation-form input,
+.reservation-form select {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.reservation-form button {
+    grid-column: 1 / -1;
+    padding: 12px;
+    background: #fff;
+    color: #8b0000;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.reservation-form button:hover {
+    background: #f2f2f2;
+}
+
+.footer {
+    background: #111;
+    color: #ccc;
+    text-align: center;
+    padding: 14px;
+    font-size: 12px;
+}
+@media (max-width: 1024px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reservation-form {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+<body>
+
+<div id="app">
+    <header class="hero">
+        <div class="hero-overlay">
+            <h1>Đặt Bàn Tại La Belle Époque</h1>
+            <p>Trải nghiệm không gian Fine Dining sang trọng và dịch vụ hoàn hảo.</p>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="card-grid">
+            <div class="main_card">
+                <img src="./macaroons.png">
+                <h3>Không Gian Chính</h3>
+                <p>Sang trọng với ánh sáng ấm áp</p>
+            </div>
+
+            <div class="main_card">
+                <img src="./hamburger.png">
+                <h3>Bàn Tiệc Tinh Tế</h3>
+                <p>Bộ đồ ăn cao cấp và bố trí hoàn hảo</p>
+            </div>
+
+            <div class="main_card">
+                <img src="./vocado.png">
+                <h3>Món Ăn Nghệ Thuật</h3>
+                <p>Plating đỉnh cao từ đầu bếp</p>
+            </div>
+
+            <div class="main_card">
+                <img src="./Món chính.png">
+                <h3>Món Chính Cao Cấp</h3>
+                <p>Nguyên liệu tươi và sáng tạo</p>
+            </div>
+
+            <div class="main_card">
+                <img src="./hamburger.png">
+                <h3>Bàn Ăn Lãng Mạn</h3>
+                <p>Nến, hoa và không khí riêng tư</p>
+            </div>
+
+            <div class="main_card">
+                <img src="./pasta.png">
+                <h3>Bếp Mở Hiện Đại</h3>
+                <p>Xem đầu bếp chế biến trực tiếp</p>
+            </div>
+
+            <div class="main_card">
+                <img src="./Steak.png">
+                <h3>Món Tráng Miệng Tinh Tế</h3>
+                <p>Edible flowers và plating nghệ thuật</p>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="reservation">
+        <h2>Đặt Bàn Ngay Hôm Nay</h2>
+        <p>Chúng tôi sẽ liên hệ xác nhận trong vòng 1 giờ.</p>
+
+        <form class="reservation-form">
+            <input type="text" placeholder="Họ và tên">
+            <input type="tel" placeholder="Số điện thoại">
+            <input type="email" placeholder="Email">
+            <input type="date">
+            <input type="time">
+            <select>
+                <option>Số lượng khách</option>
+                <option>1-2</option>
+                <option>3-4</option>
+                <option>5-6</option>
+                <option>7+</option>
+            </select>
+            <button>Gửi Yêu Cầu Đặt Bàn</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <p>© 2024 La Belle Époque - Fine Dining Restaurant. All rights reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

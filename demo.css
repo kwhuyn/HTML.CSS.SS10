@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+.flex-container {
+    width: 100%;
+    height: 500px;
+    background-color: lightskyblue;
+    display: flex; /* thuộc tính bắt buộc để định nghĩa flexbox */
+    flex-direction:row; /* sắp xếp các phần tử con theo chiều cột ngược */
+    /*mặc định là row (hàng ngang)*/
+    justify-content: center; /* căn chỉnh các phần tử con theo chiều chính (main axis) */
+    align-items: center; /* căn chỉnh các phần tử con theo chiều phụ (cross axis) */
+    gap: 10px; /* khoảng cách giữa các phần tử con */
+    flex-wrap: wrap; /* cho phép các phần tử con xuống dòng nếu không đủ chỗ */
+    /*reverse: ngược lại*/
+}
+.flex-item {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    border: 1px solid black;
+    order: ; /* thuộc tính để thay đổi thứ tự hiển thị của các phần tử con */
+}
+
+.item-1 {
+    order: 1;
+    /*width: calc(100vw - 852px);8*/
+    flex: 1 ;
+
+}
+.item-2 {
+    order: 2;
+}
+.item-3 {
+    order: 3;
+    flex: 3;
+}
+.item-4 {
+    order: 4;
+}
+.item-5 {
+    order: 5;
+    flex: 2;
+}

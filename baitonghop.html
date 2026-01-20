@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        width: auto;
+    }
+    .header {
+        width: 100%;
+        height: 97px;
+        background-color: #1e1e1e;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+        align-items: center;
+    }
+    .logo {
+        color: #D4AF37;
+        font-size: 32px;
+        font-weight: 700px;
+        
+    }
+    .list-link {
+        display: flex;
+        gap: 20px;
+    }
+    .link{
+        color: #dddddd;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .main {
+        background-color: #f9f9f9;
+        padding: 60px 40px 53.83px 40px;
+    }.list-card {
+        display: flex;
+        gap: 40px;
+    }
+    .class-item {
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0px 8px 30px 0px;
+        padding: 40px;
+    }
+    .food-name {
+        font-size: 27.6px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #d4af37
+    }
+    .food-description {
+        font-size: 17.7px;
+        line-height: 28.8px;
+        font-weight:700px ;
+        margin-bottom: 34.79px;
+        color: #555555;
+    }
+    .food-image {
+        object-fit: cover;
+        width: 500px;
+        height: 300px;
+        border-radius: 15px;
+        opacity: 1;
+        top: 386.17px;
+        left: 40px;
+    }
+    .footer {
+        display: flex;
+        height: 78px;
+        background-color: #1e1e1e;
+        color: #dddddd;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px;
+    }
+    .privacy {
+        color: #dddddd;
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    .footer-item{
+        color: #dddddd;
+        line-height: 100%;
+        text-decoration: none;
+        letter-spacing: 0%;
+
+    }
+</style>
+<body>
+    <div id="app">
+        <!--Phần header-->
+        <header class="header"> 
+            <h3 class="logo">Food blog</h3>
+            <div class="list-link">
+               <a class="link" href="">Home</a>
+               <a class="link" href="">Receips</a>
+               <a class="link" href="">Menu</a>
+               <a class="link" href="">Contact</a>
+            </div>
+        </header>
+        <!--Phần main-->
+        <main class="main">
+            <section class="list-card">
+                <div class="class-item">
+                    <div class="food-name">Món khai vị</div>
+                    <p class="food-description">
+                    Appetizer (món khai vị) là món ăn hoặc đồ uống nhỏ, nhẹ
+                    nhàng phục vụ trước bữa chính nhằm kích thích vị giác,
+                    "đánh thức" sự thèm ăn cho các món tiếp theo trong bữa
+                    tiệc. Chúng có thể nóng hoặc lạnh, khẩu phần nhỏ, và có
+                    ở nhiều nền ẩm thực khác nhau (như gỏi, nem ở Việt
+                    Nam, hoặc phô mai, bánh quy ở phương Tây), giúp mở
+                    đầu bữa ăn một cách hấp dẫn. Món khai vị mang đến
+                    những trải nghiệm thú vị giúp thực khách cảm nhận được
+                    sự đặc biệt của bữa tiệc ngay từ đầu.</p>
+                    <img class="food-image" src="./Món khai vị.png" alt="">
+                </div>
+                <div class="class-item">
+                    <div class="food-name">Món chính</div>
+                    <p class="food-description">
+                    Main course (món chính) là phần quan trọng nhất, thịnh
+                    soạn nhất trong một bữa ăn nhiều món, thường được
+                    phục vụ sau món khai vị (như súp, gỏi, salad) và trước
+                    món tráng miệng. Món chính cung cấp dinh dưỡng và
+                    năng lượng chính, thường tập trung vào thịt, cá hoặc hải
+                    sản được chế biến đa dạng như nướng, xào, kho, hấp.
+                    Tùy theo phong cách ẩm thực Món chính không chỉ mang
+                    đến sự phong phú về hương vị mà còn giúp thực khách
+                    cảm nhận được sự tinh tế trong ẩm thực.</p>
+                    <img class="food-image" src="./Món chính.png" alt="">
+                </div>
+                <div class="class-item">
+                    <div class="food-name">Món tráng miệng</div>
+                    <p class="food-description">
+                    Món tráng miệng là món ăn ngọt hoặc món nhẹ được
+                    dùng sau bữa ăn chính, nhằm kết thúc bữa ăn một cách
+                    trọn vẹn, làm sạch vị giác, và thường bao gồm các loại
+                    bánh, kem, trái cây, sô cô la, chè, hoặc sữa chua. Món
+                    tráng miệng không chỉ giúp làm dịu đi vị giác mà còn
+                    mang đến sự hài lòng cho thực khách, khép lại bữa ăn
+                    trong một cảm giác ngon miệng và thoải mái. Vị ngọt của
+                    món tráng miệng kích hoạt giải phóng endorphin trong
+                    não, tạo cảm giác hạnh phúc và thư giãn sau bữa ăn.</p>
+                    <img class="food-image" src="./Món tráng miệng.png" alt="">
+                </div>
+                 
+            </section>
+        </main>
+        <!--Phần footer-->
+        <footer class="footer">
+
+            <p >&copy 2025 Food Blog. All rights reserved.</p>
+            <div class="footer-item">
+                <a class="footer-item" href="">Privacy </a>
+                <a class="footer-item" href=""> Terms </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
